@@ -5,5 +5,5 @@
 
 (
 cd github.com/interTwin-eu/itwinai-plugin-template &&
-    licensee detect . --confidence 60 --json 
+    cffconvert --validate 
 )
