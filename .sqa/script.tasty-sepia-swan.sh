@@ -7,6 +7,6 @@
 cd github.com/interTwin-eu/itwinai-plugin-template &&
     python -m venv .venv &&&&
     source .venv/bin/activate &&&&
-    .venv/bin/pip install &&&&
+    .venv/bin/pip install . &&&&
     .venv/bin/pytest -v tests/
 )

@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/interTwin-eu/itwinai-plugin-template:
       branch: main
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/itwinai-plugin-template git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-blue-beagle.sh
-        container: qc.acc_tacky-amaranth-cattle
+        - /usr/bin/env sh .sqa/script.paltry-carmine-meerkat.sh
+        container: qc.acc_scaly-amber-collie
   QC.Doc:
     repos:
       github.com/interTwin-eu/itwinai-plugin-template find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-cardinal-cuscus.sh
-        container: qc.doc_skinny-sepia-cattle
+        - /usr/bin/env sh .sqa/script.dorky-auburn-horse.sh
+        container: qc.doc_clammy-olivine-corgi
       github.com/interTwin-eu/itwinai-plugin-template git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-smalt-moose.sh
-        container: qc.doc_paltry-amber-swan
+        - /usr/bin/env sh .sqa/script.lovely-seashell-cuscus.sh
+        container: qc.doc_skinny-celadon-russel
       github.com/interTwin-eu/itwinai-plugin-template markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-lime-mule.sh
-        container: qc.doc_boozy-amethyst-olm
+        - /usr/bin/env sh .sqa/script.beady-firebrick-binturong.sh
+        container: qc.doc_surly-mustard-hornet
   QC.Lic:
     repos:
       github.com/interTwin-eu/itwinai-plugin-template licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-celadon-jackal.sh
-        container: qc.lic_silly-zucchini-axolotl
+        - /usr/bin/env sh .sqa/script.snippy-persimmon-vole.sh
+        container: qc.lic_skimpy-white-moth
   QC.Met:
     repos:
       github.com/interTwin-eu/itwinai-plugin-template cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-linen-eel.sh
-        container: qc.met_chummy-mustard-fousek
+        - /usr/bin/env sh .sqa/script.snappy-rust-lizard.sh
+        container: qc.met_gimpy-pink-sheepdog
   QC.Sec:
     repos:
       github.com/interTwin-eu/itwinai-plugin-template bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-denim-buzzard.sh
-        container: qc.sec_clammy-fuchsia-loon
+        - /usr/bin/env sh .sqa/script.lovely-ultramarine-serval.sh
+        container: qc.sec_bluesy-chestnut-dolphin
   QC.Sty:
     repos:
       github.com/interTwin-eu/itwinai-plugin-template flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-apricot-fly.sh
-        container: qc.sty_ready-alizarin-gorilla
+        - /usr/bin/env sh .sqa/script.hasty-flax-lionfish.sh
+        container: qc.sty_squirrely-persimmon-guppy
       github.com/interTwin-eu/itwinai-plugin-template hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-vermilion-oyster.sh
-        container: qc.sty_lousy-carmine-seahorse
+        - /usr/bin/env sh .sqa/script.frumpy-cardinal-ostrich.sh
+        container: qc.sty_smelly-turquoise-ocelot
       github.com/interTwin-eu/itwinai-plugin-template jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-yellow-tarsier.sh
-        container: qc.sty_sickly-red-scorpion
+        - /usr/bin/env sh .sqa/script.bumpy-apricot-balinese.sh
+        container: qc.sty_bumpy-lilac-dormouse
   QC.Uni:
     repos:
       github.com/interTwin-eu/itwinai-plugin-template commands:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-alizarin-budgerigar.sh
-        container: qc.uni_beady-gamboge-anteater
+        - /usr/bin/env sh .sqa/script.tasty-sepia-swan.sh
+        container: qc.uni_hasty-sepia-kiwi
   QC.Ver:
     repos:
       github.com/interTwin-eu/itwinai-plugin-template get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-seashell-dhole.sh
-        container: qc.ver_hasty-wheat-markhor
+        - /usr/bin/env sh .sqa/script.shaky-olivine-lionfish.sh
+        container: qc.ver_goopy-lilac-elephant
 timeout: 5400
